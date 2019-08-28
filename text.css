@@ -2,10 +2,22 @@
 .bottom__text {
   z-index: 1;
   opacity: 1;
-  color: rgb(3, 66, 3);
+  color: rgb(181, 7, 7);
+  animation-name: text;
+  animation-duration: 10s;
+  animation-delay: 0s;
 }
 
-/* iphoneSE */
+@keyframes text {
+  from {
+    transform: rotateX(0);
+  }
+  to {
+    transform: rotateX(1);
+  }
+}
+
+/* iphoneSE 320x568*/
 @media screen and (min-width: 320px) {
   .header__title,
   .main__video__header {
@@ -27,10 +39,47 @@
     left: 0px;
   }
 }
-/* iphone8 
-  @media screen and (min-width: 375px) {
-*/
+/* iphone8 */
+@media screen and (min-width: 370px) {
+  .header__title,
+  .main__video__header {
+    position: absolute;
+    font-size: 77px;
+    text-align: center;
+    width: 250px;
+    height: 150px;
+    top: 14px;
+    left: 32px;
+  }
+  .bottom__text {
+    position: absolute;
+    font-size: 49px;
+    text-align: center;
+    top: 473px;
+    padding: 20px;
+    left: 0px;
+  }
+}
 
-/* iphone8+ 
-  @media screen and (min-width: 414px) {
-*/
+/* iphone8 Plus */
+@media screen and (min-width: 414px) {
+  .header__title,
+  .main__video__header {
+    position: absolute;
+    font-size: 50px;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    top: 30px;
+    left: 30px;
+  }
+
+  .bottom__text {
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    top: 420px;
+    padding: 20px;
+    left: 0px;
+  }
+}
