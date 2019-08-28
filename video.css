@@ -1,0 +1,73 @@
+/* iphoneSE */
+@media screen and (min-width: 320px) {
+  .main__video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 568px;
+  }
+  .main__video-play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 568px;
+    filter: brightness(0.7);
+  }
+  .header__title,
+  .main__video__header {
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    top: 30px;
+    left: 30px;
+  }
+  .main__btn,
+  .main__btn.pumpkin {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+  }
+  .bottom__text {
+    position: absolute;
+    top: 400px;
+    left: 25px;
+  }
+}
+/* iphone8 */
+@media screen and (min-width: 375px) {
+  .main__video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    height: 667px;
+  }
+  .main__video-play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    height: 667px;
+  }
+}
+/* iphone8+ */
+@media screen and (min-width: 414px) {
+  .main__video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 414px;
+    height: 736px;
+  }
+  .main__video-play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 414px;
+    height: 736px;
+  }
+}
