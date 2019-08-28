@@ -11,9 +11,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 320px;
-    height: 568px;
     filter: brightness(0.7);
+
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 320px;
+    min-height: 568px;
   }
   .header__title,
   .main__video__header {
