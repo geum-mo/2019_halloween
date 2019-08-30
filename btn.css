@@ -3,15 +3,47 @@
   .main__btn,
   .main__btn.pumpkin {
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 150px;
+    animation-name: pumpkin-popup;
+    animation-duration: 30s;
+    animation-delay: 0s;
+  }
+  @keyframes pumpkin-popup {
+    0% {
+      transform: scale(0);
+    }
+    27% {
+      transform: scale(0);
+    }
+    28% {
+      transform: scale(3);
+    }
+    29% {
+      transform: scale(1);
+    }
+    30% {
+      transform: scale (2.5);
+    }
+    31% {
+      transform: scale (1);
+    }
   }
 }
 
 #unmuteButton {
-  font-size: 20px;
-  color: white;
+  font-size: 30px;
+  color: dimgrey;
   position: absolute;
-  top: 113px;
-  left: 330px;
+  top: 180px;
+  left: 280px;
+}
+
+.invite__bg-rsvp {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  background-color: white;
+  opacity: 0.5;
+  color: red;
 }

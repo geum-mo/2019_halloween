@@ -17,7 +17,9 @@
           <source src="output.mp4" type="video/mp4" />
         </video>
         <span class="main__btn">
-          <img class="main__btn pumpkin" src="pumpkin.png" />
+          <a href="invite.html">
+            <img class="main__btn pumpkin" src="pumpkin.png"
+          /></a>
         </span>
         <span class="bottom__text"
           >Click above pumpkin to see your invitation
@@ -30,10 +32,10 @@
         </button>
       </div>
     </main>
+    <script>
+      unmuteButton.addEventListener("click", function() {
+        mainVideoPlay.muted = false;
+      });
+    </script>
   </body>
-  <script>
-    unmuteButton.addEventListener("click", function() {
-      mainVideoPlay.muted = false;
-    });
-  </script>
 </html>
