@@ -1,28 +1,87 @@
 .invite {
-  background: url(picture2.jpg) center no-repeat;
+  background: url(picture3.jpg) center no-repeat;
   background-size: cover;
 }
 .invite__bg {
   position: fixed;
   width: 100vh;
   height: 100vh;
-  z-index: 2;
-  background-color: white;
-  opacity: 0.8;
+  z-index: 1;
+  background-color: black;
+  opacity: 0.7;
+}
+
+.invite__title {
+  z-index: 4;
+  position: absolute;
+  top: 50px;
+  left: 25px;
+  font-weight: 100;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 40px;
+  color: white;
 }
 
 .invite__content {
-  font-family: "Kirang Haerang", sans-serif, Arial, Helvetica, sans-serif;
-  text-align: left;
-  font-size: 24px;
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  background-color: #020202;
-  width: 100%;
-  height: 100%;
-  margin: 0 0 0 0;
-  padding: 50 50 50 50;
-  z-index: 3;
+  z-index: 4;
+  display: block;
+  position: absolute;
+  top: 75px;
+  left: 30px;
+  font-weight: 200;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 40px;
   color: white;
+}
+
+.invite__column {
+  display: block;
+  margin-left: 25px;
+}
+
+.invite__column-i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+}
+
+.invite__content-location,
+.invite__content-time,
+.invite__content-theme,
+.invite__content-fees {
+  display: flex;
+  align-items: center;
+  font-size: 23px;
+  margin-top: 40px;
+}
+
+.invite__bottom {
+  z-index: 2;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  height: 28%;
+  bottom: 0px;
+  opacity: 1;
+  color: white;
+  font-size: 25px;
+  font-weight: 100;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 50 20 20 20;
+  margin: 20px;
+}
+
+.invite__bottom-text {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  font-weight: 200;
+  padding: 10px;
+  opacity: 1;
+  color: white;
+  background-color: red;
 }

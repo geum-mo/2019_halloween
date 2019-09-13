@@ -5,45 +5,90 @@
     position: absolute;
     width: 150px;
     height: 150px;
-    animation-name: pumpkin-popup;
-    animation-duration: 30s;
-    animation-delay: 0s;
+    animation-name: pumpkin-popup, heartBeat;
+    animation-duration: 10s, 1.3s;
+    animation-delay: 0s, 13s;
+    animation-iteration-count: 1, infinite;
+    animation-timing-function: ease-in-out, ease-in-out;
   }
   @keyframes pumpkin-popup {
     0% {
       transform: scale(0);
     }
-    27% {
+    80% {
       transform: scale(0);
     }
-    28% {
+    83% {
       transform: scale(3);
     }
-    29% {
+    90% {
       transform: scale(1);
     }
-    30% {
-      transform: scale (2.5);
+    100% {
+      transform: scale(1);
     }
-    31% {
-      transform: scale (1);
+  }
+
+  @-webkit-keyframes heartBeat {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+
+    14% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+
+    28% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+
+    42% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+
+    70% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+
+  @keyframes heartBeat {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+
+    14% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+
+    28% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+
+    42% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+
+    70% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
     }
   }
 }
 
 #unmuteButton {
+  z-index: 3;
   font-size: 30px;
   color: dimgrey;
   position: absolute;
   top: 180px;
   left: 280px;
-}
-
-.invite__bg-rsvp {
-  position: absolute;
-  bottom: 50px;
-  left: 50px;
-  background-color: white;
-  opacity: 0.5;
-  color: red;
 }
