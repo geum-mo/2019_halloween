@@ -7,8 +7,7 @@
   width: 100vh;
   height: 100vh;
   z-index: 1;
-  background-color: black;
-  opacity: 0.7;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .invite__title {
@@ -84,4 +83,9 @@
   opacity: 1;
   color: white;
   background-color: red;
+}
+
+.invite__bg-rsvp {
+  display: flex;
+  width: 100%;
 }
