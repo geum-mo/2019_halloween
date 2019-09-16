@@ -11,6 +11,12 @@
     />
   </head>
   <body class="invite">
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>1002-948-770933 우리은행</br>입금주: 강금모</p>
+      </div>
+    </div>
     <div class="invite__bg">
       <span class="invite__title">
         JOIN US
@@ -24,8 +30,8 @@
           <div class="invite__column">
             <a
               href="https://map.naver.com/local/siteview.nhn?code=1161754822&_ts=1568370505509"
-            >
-              <p>파티로프트 신촌</p></a
+              style="text-decoration: blue"
+              ><i><b style="font-weight: 300">파티로프트 신촌</b></i></a
             >
           </div>
         </div>
@@ -53,19 +59,20 @@
           </div>
           <div class="invite__column">
             <p>30,000 KRW</p>
-            <p>pay at site or wire-transfer</p>
+            <p id="wireTransfer">
+              pay at site or
+              <i><b style="font-weight: 300">wire-transfer</b></i>
+            </p>
           </div>
         </div>
-      </div>
-      <div class="invite__bottom">
-        <a
+        <div class="invite__rsvp"><a
           class="invite__bg-rsvp"
           href="https://docs.google.com/forms/d/1BDnw2Da25qVhRjE36r2FhBC1zK3GQ0USCjp8hH6f1Qw/edit"
-          >Click here to RSVP now or by Sep 30th at the latest!
-        </a>
+          >Click here to RSVP now</br>or by <u>Sep 30th</u> at the latest!
+        </a></div>
       </div>
     </div>
-
     <script src="https://kit.fontawesome.com/a68ce12601.js"></script>
+    <script src="invite.js"></script>
   </body>
 </html>
