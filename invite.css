@@ -1,22 +1,27 @@
+* {
+  box-sizing: content-box;
+}
+
 .invite {
   background: url(picture3.jpg) center no-repeat;
-  background-position: left top;
-  background-size: cover;
+  background-position: center;
+  background-size: 150vw;
+  background-color: #030000;
+  width: 100vw;
   height: 100vh;
 }
 .invite__bg {
-  position: fixed;
-  width: 100vh;
+  padding: 35px;
+  margin: 0 auto;
+  width: 100vw;
   height: 100vh;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .invite__title {
   z-index: 4;
   position: absolute;
-  top: 50px;
-  left: 25px;
   font-weight: 100;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -25,11 +30,10 @@
 }
 
 .invite__content {
+  padding-top: 50px;
   z-index: 4;
   display: block;
   position: absolute;
-  top: 75px;
-  left: 30px;
   font-weight: 200;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -60,14 +64,57 @@
 }
 
 .invite__rsvp {
+  position: fixed;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 300;
-  font-size: 25px;
-  display: flex;
-  width: 100%;
-  margin-top: 50px;
+  color: white;
+  font-size: 20px;
+  width: 75vw;
+  top: 80%;
+  left: 50%;
+  margin-left: -37.5vw;
+  padding: 10px;
   background-color: red;
   text-align: center;
-  padding: 13;
+}
+
+@media screen and (max-width: 320px) {
+  .invite__content-location,
+  .invite__content-time,
+  .invite__content-theme,
+  .invite__content-fees {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    margin-top: 40px;
+  }
+}
+
+.bigScreen {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: white;
+  font-size: 28px;
+  text-align: center;
+  line-height: 1.5;
+  padding: 0px 20px;
+  display: none;
+  z-index: 4;
+}
+
+@media screen and (min-width: 550px) {
+  .bigScreen {
+    display: flex;
+  }
 }
