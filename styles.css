@@ -16,21 +16,30 @@
   display: none;
 }
 
-a,
-.main__btn,
-.main__btn .pumpkin {
-  z-index: 3;
-  color: inherit;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 body {
   background-color: #010100;
   color: #020202;
   font-family: "creepster", "Kaushan Script", cursive, "Emilys Candy", cursive,
     "Short Stack", cursive, "Cherry Swash", cursive, "Finger Paint", cursive,
     "Fontdiner Swanky", cursive;
+  position: relative;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+#mainVideoPlay {
+  position: fixed;
+  margin: 0 auto;
+  top: 15vh;
+}
+
+.main__btn,
+.main__btn.pumpkin {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 30%;
 }
 
 .pulser {

@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Do not turn off your audio</title>
+    <title>Please unmute your audio</title>
     <script src="https://kit.fontawesome.com/a68ce12601.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -18,6 +18,9 @@
       <div class="main__video">
         <div class="main__video__header">
           <span class="header__title">Trick or Treat!</span>
+          <span class="bottom__text"
+            >Tab the pumpkin to see your invitation
+          </span>
         </div>
         <video id="mainVideoPlay" autoplay loop muted playsinline="true">
           <source src="output.mp4" type="video/mp4" />
@@ -27,9 +30,7 @@
             <img class="main__btn pumpkin" src="pumpkin.png"
           /></a>
         </span>
-        <span class="bottom__text"
-          >Tab the pumpkin to see your invitation
-        </span>
+
         <audio id="player" muted autoplay loop>
           <source src="audio.wav" type="audio/wav" />
         </audio>
@@ -38,6 +39,12 @@
         </button>
       </div>
     </main>
+    <div class="bigScreen">
+      <span class="bigScreen__text"
+        >Sorry, it's only avaiable in vertical view of your mobile devices
+        (tablets are also not available.)</span
+      >
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
