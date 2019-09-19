@@ -3,6 +3,7 @@
   z-index: 1;
   opacity: 1;
   color: rgb(181, 7, 7);
+  max-width: 450px;
 }
 
 .header__title {

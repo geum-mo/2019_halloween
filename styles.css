@@ -27,6 +27,11 @@ body {
   margin: 0 auto;
 }
 
+.main__video,
+.main__video__header {
+  margin: 0 auto;
+}
+
 #mainVideoPlay {
   position: fixed;
   margin: 0 auto;
