@@ -49,6 +49,10 @@ a:active {
   color: white;
 }
 
+.modal-content a {
+  color: black;
+}
+
 .main__video,
 .main__video__header {
   margin: 0 auto;
